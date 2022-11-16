@@ -1,18 +1,13 @@
-import java.util.HashMap;
-import java.util.Random;
+import java.util.*;
 
 public class SortedMap {
-    public static HashMap<Integer, String> map= new HashMap<>(10);
+    public static Map<Integer, String> map = new TreeMap<>();
     public static Random random = new Random();
 
     public static void main(String[] args) {
         for (int i =0 ; i< 10; i++){
-            map.put(i, intToString(random.nextInt()));
+            map.put(i, String.format("%d", random.nextInt()));
         }
         System.out.println(map);
-    }
-
-    public static String intToString(int i){
-        return String.format("%d", i);
     }
 }
