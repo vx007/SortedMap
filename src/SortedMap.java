@@ -1,7 +1,7 @@
 import java.util.*;
 
 public class SortedMap {
-    public static Map<Integer, String> map = new TreeMap<>();
+    public static Map<Integer, String> map = new LinkedHashMap<>();
     public static Random random = new Random();
 
     public static void main(String[] args) {
